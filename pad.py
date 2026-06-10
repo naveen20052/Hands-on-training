@@ -1,6 +1,6 @@
 def py():
     f=open('padma.txt','w+')
-    f.write('ROW RAT \n --------------------\n')
+    f.write('ROW lAT \n --------------------\n')
     for i in range(1,6):
         for j in range(0,i):
             f.write(str(i))
@@ -9,9 +9,9 @@ def py():
 py()
 
 def py():
-    #col-rat
+    
     f=open('padma.txt','a+')
-    f.write('col rat \n---------------------\n')
+    f.write('col lat \n---------------------\n')
     for i in range(1,6):
         for j in range(0,i):
             f.write(str(j))
@@ -20,9 +20,9 @@ def py():
 py()
 
 def py():
-    #row-rat-up
+    
     f=open('padma.txt','a+')
-    f.write('row rat upper \n------------------\n')
+    f.write('row lat upper \n------------------\n')
     for i in range(1,6):
         for j in range(0,i):
             f.write(str(chr(i+64)))
@@ -30,7 +30,7 @@ def py():
     f.close()
 py()
 def py():
-    #col-rat-down
+   
     f=open('padma.txt','a+')
     f.write('col rat upper \n------------------\n')
     
@@ -41,9 +41,9 @@ def py():
 py()  
 
 def py():
-    #col-rat-up
+    
     f=open('padma.txt','a+')
-    f.write('col rat lower \n------------------\n')
+    f.write('col lat lower \n------------------\n')
     for i in range(1,6):
         for j in range(0,i):
             f.write(str(chr(j+97)))
@@ -52,9 +52,9 @@ def py():
 py()
 
 def py():
-    #row-rat-up
+   
     f=open('padma.txt','a+')
-    f.write('row rat lower \n------------------\n')
+    f.write('row lat lower \n------------------\n')
     for i in range(1,6):
         for j in range(0,i):
             f.write(str(chr(i+96)))
@@ -63,9 +63,9 @@ def py():
 py()
 
 def py():
-    #rev-row-rat
+  
     f=open('padma.txt','a+')
-    f.write('inverse row rat \n------------------\n')
+    f.write('inverse row lat \n------------------\n')
     for i in range(6,0,-1):
         for j in range(0,i):
             f.write(str(i))
@@ -73,20 +73,20 @@ def py():
     f.close()
 py()
 def py():
-    #rev-col-rat
+    
     f=open('padma.txt','a+')
-    f.write('inverse col rat \n------------------\n')
-    for i in range(1,6):
+    f.write('inverse col lat \n------------------\n')
+    for i in range(6,0,-1):
         for j in range(0,i):
             f.write(str(j))
         f.write('\n')
     f.close()
 py()
 def py():
-    # rev-col-rat
+    
     f=open('padma.txt','a+')
-    f.write('inverse row rat \n------------------\n')
-    for i in range(1,6):
+    f.write('inverse row upper lat \n------------------\n')
+    for i in range(6,0,-1):
         for j in range(0,i):
             f.write(str(chr(i+64)))
         f.write('\n')
@@ -95,95 +95,40 @@ py()
 
 def py():
     f=open('padma.txt','a+')
-    f.write('row rat upper \n------------------\n')
-    for i in range(1,6):
-        for k in range(6,i,-1):
-            f.write(' ')
+    f.write('inverse col upper \n------------------------\n')
+    for i in range(6,0,-1):
         for j in range(0,i):
-            f.write(str(chr(i+64)))
-        f.write('\n')
+            f.write(str(chr(j+65)))
+        f.write('\n')       
     f.close()
 py()
 
 def py():
     f=open('padma.txt','a+')
-    f.write('row rat upper \n------------------\n')
-    for i in range(1,6):
-        for j in range(6,i,-1):
-            f.write(' ')
-        for k in range(0,i):
-            f.write(str(chr(k+64)))
-        f.write('\n')
-    f.close()
-py()
-
-def py():
-    f=open('padma.txt','a+')
-    f.write('row rat upper \n------------------\n')
+    f.write('inverse row lower \n------------------------\n')
     for i in range(6,0,-1):
-        for j in range(6,i,-1):
-            f.write(' ')
-        for k in range(0,i):
-            f.write(str(chr(i+64)))
-        f.write('\n')
-    f.close()
-py()
-def py():
-    f=open('padma.txt','a+')
-    f.write('row rat upper \n------------------\n')
-    for i in range(6,0,-1):
-        for j in range(6,i,-1):
-            f.write(' ')
-        for k in range(0,i):
-            f.write(str(chr(k+96)))
+        for j in range(0,i):
+            f.write(str(chr(i+96)))
         f.write('\n')
     f.close()
 py()
 
 
-
 def py():
     f=open('padma.txt','a+')
-    f.write('Rat \n----------------------\n')
+    f.write('inverse col lower \n------------------------\n')
     for i in range(6,0,-1):
-        for k in range(6,i,-1):
-            f.write(' ')
         for j in range(0,i):
             f.write(str(chr(j+96)))
         f.write('\n')
     f.close()
-
 py()
-
-def pon():
-    f=open('padma.txt','a+')
-    f.write('row rat upper \n------------------\n')
-    for i in range(6,0,-1):
-        for k in range(6,i,-1):
-            f.write(' ')
-        for j in range(0,i):
-            f.write(str(i))
-        f.write('\n')
-    f.close()
-pon()
-
-def pon():
-    f=open('padma.txt','a+')
-    f.write('row rat upper \n------------------\n')
-    for i in range(6,0,-1):
-        for k in range(6,i,-1):
-            f.write(' ')
-        for j in range(0,i):
-            f.write(str(j)+' ')
-        f.write('\n')
-    f.close()
-pon()
-        
+                    
     
 
-            
-     
 
-   
 
-    
+
+
+
+
